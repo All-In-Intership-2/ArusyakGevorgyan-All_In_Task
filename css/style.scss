@@ -764,7 +764,14 @@ header{
             .department{
                 margin-top: 220px;
                 background-color: #F8F9FB;
-                height: 700px;
+                height: 100%;
+
+                @media screen and(max-width: 600px){
+                    margin-top: 650px;
+                }
+                @media screen and(max-width: 440px){
+                    margin-top: 900px;
+                }
                 .section-heading{
                     .section-title{
                     
@@ -816,16 +823,17 @@ header{
 
                 .tabs{
                     margin-top: 40px;
+                   
                     .tab-links{
                         display: flex;
-                        margin-left: -5px;
-                        margin-right: -5px;
-                        padding-bottom: 15px;
+                        flex-wrap: wrap;
                         
+                       
+                       
                         li{
                             list-style-type: none;
                             flex: 1;
-                            margin: 0 5px;
+                            margin: 10px 10px;
 
                             &.active{
                                 .blue-box{
@@ -850,6 +858,113 @@ header{
                                         transition: all 0.3s ease;
                                         background-color: #0cb8b6;
                                     }
+                                }
+
+                                .red-box{
+                                    background-color: #e6492d;
+                                    span{
+                                        color: #fff;
+                                    }
+                                    svg{
+                                        fill: #fff;
+                                    }
+                                    &::before{
+                                        content: '';
+                                        position: absolute;
+                                        height: 20px;
+                                        width: 20px;
+                                        left: 50%;
+                                        bottom: -10px;
+                                        transform: translateX(-50%) rotate(45deg);
+                                        border-radius: 0px 0px 7px 0px;
+                                        transition: all 0.3s ease;
+                                        background-color: #e6492d;
+                                    }
+                                }
+                                .green-box{
+                                    background-color: #37af47;
+                                    span{
+                                        color: #fff;
+                                    }
+                                    svg{
+                                        fill: #fff;
+                                    }
+                                    &::before{
+                                        content: '';
+                                        position: absolute;
+                                        height: 20px;
+                                        width: 20px;
+                                        left: 50%;
+                                        bottom: -10px;
+                                        transform: translateX(-50%) rotate(45deg);
+                                        border-radius: 0px 0px 7px 0px;
+                                        transition: all 0.3s ease;
+                                        background-color: #37af47;
+                                    }
+                                }
+                                .sky-blue-box{
+                                    background-color: #1665d8;
+                                    span{
+                                        color: #fff;
+                                    }
+                                    svg{
+                                        fill: #fff;
+                                    }
+                                    &::before{
+                                        content: '';
+                                        position: absolute;
+                                        height: 20px;
+                                        width: 20px;
+                                        left: 50%;
+                                        bottom: -10px;
+                                        transform: translateX(-50%) rotate(45deg);
+                                        border-radius: 0px 0px 7px 0px;
+                                        transition: all 0.3s ease;
+                                        background-color: #1665d8;
+                                    }
+                                }
+                                .orange-box{
+                                    background-color: #f6ab2f;
+                                    span{
+                                        color: #fff;
+                                    }
+                                    svg{
+                                        fill: #fff;
+                                    }
+                                    &::before{
+                                        content: '';
+                                        position: absolute;
+                                        height: 20px;
+                                        width: 20px;
+                                        left: 50%;
+                                        bottom: -10px;
+                                        transform: translateX(-50%) rotate(45deg);
+                                        border-radius: 0px 0px 7px 0px;
+                                        transition: all 0.3s ease;
+                                        background-color: #f6ab2f;
+                                    }
+                                }
+                                .gray-box{
+                                    background-color: #9ea0a5;
+                                    span{
+                                        color: #fff;
+                                    }
+                                    svg{
+                                        fill: #fff;
+                                    }
+                                    &::before{
+                                        content: '';
+                                        position: absolute;
+                                        height: 20px;
+                                        width: 20px;
+                                        left: 50%;
+                                        bottom: -10px;
+                                        transform: translateX(-50%) rotate(45deg);
+                                        border-radius: 0px 0px 7px 0px;
+                                        transition: all 0.3s ease;
+                                        background-color: #9ea0a5;
+                                    }
+
                                 }
                                 
                                 
@@ -1048,9 +1163,427 @@ header{
 
                 @media screen and(max-width: 991px){
                     margin-top: 600px;
+                    
+                }
+
+
+                .tab-content{
+                    .tab{
+                        .row{
+                            display: flex;
+                            flex-wrap: wrap;
+                            margin-top: 30px;
+                            .tab-box{
+                                flex-basis: 50%;
+                                .image-box{
+                                    img{
+                                        max-width: 100%;
+                                    }
+                                }
+                            }
+                            .right-tab-box{
+                                display: flex;
+                                flex-direction: column;
+                                flex-basis: 49%;
+                                margin-top: 60px;
+                                .tab-box-info{
+                                    margin-bottom: 33px;
+                                    .tab-box-title{
+                                        font-size: 32px;
+                                        margin-bottom: 6px;
+                                        color: $title;
+                                        margin: 0 0 10px 0;
+                                        font-weight: 600;
+                                        line-height: 1.2em;
+                                        span{
+                                            color: $btnBg;
+                                        }
+                                    }
+                                    .tab-box-subtitle{
+                                        font-size: 15px;
+                                        line-height: 1.6em;
+                                        margin-bottom: 17px;
+                                        color: $title;
+                                        margin: 0 0 10px 0;
+                                        font-weight: 600;
+                                    }
+                                    .tab-box-text{
+                                        margin-bottom: 33px;
+                                        font-size: 15px;
+                                        font-weight: 400;
+                                        line-height: 1.6em;
+                                    }
+                                }
+                                .imagebox-btn{
+                                    .btn{
+                                        display: inline-flex;
+                                        justify-content: center;
+                                        line-height: 1.6em;
+                                        font-weight: 600;
+                                        border-radius: 7px;
+                                        border: none;
+                                        outline: none;
+                                        transition: all 0.4s ease;
+                                    }
+                                    a{
+                                        background-color: $btnBg;
+                                        color: #fff;
+                                        padding: 0.6em 1.8em;
+                                        text-decoration: none;
+                                    }
+                                }
+                                @media screen and(max-width: 991px){
+                                    flex-basis: 90%;
+                                    margin-left: 50px;
+                                }
+                                
+                            }
+
+                            
+                            
+                        }
+                    }
                 }
             }
+
         }
         //Department Section End
+
+        //Service Section Start
+
+            .shape-wrap{
+                position: relative;
+                background-color: #f9fafc;
+                height: 900px;
+                .section-shape{
+                    position: absolute;
+                    height: 150px;
+                    width: 100%;
+                    bottom: 0;
+                    left: 0;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }
+
+                }
+                .contact-shape-svg{
+                    position: absolute;
+                    top: 0;
+                    right: 0;     
+                    img{
+                        max-width: 100%;
+                        height: auto;
+                    }              
+                }
+                .section-title{
+                    margin: 100px auto 20px auto;
+                    
+                    .title{
+                        
+                    }
+                    .seperator{
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: row;
+                        align-items: center;
+                        margin-top: 122px;
+                        margin-bottom: 15px;
+                        width: 130px;
+                        margin: auto;
+                        .seperator-left{
+                            height: 2px;
+                            width: 42px;
+                            background-color: $btnBg;
+                            
+                        }
+
+                        .seperator-center{
+                            margin: 0 15px;
+                            animation: rotateAnimation 6s linear infinite;
+                            img{
+                                border: 0;
+                                max-width: 100%;
+                                height: auto;
+                                
+                            }
+                        }
+
+                        .seperator-right{
+                            height: 2px;
+                            width: 42px;
+                            background-color: $btnBg;
+                        }
+                    }
+                    
+                    .heading-subtitle{
+                        font-size: 16px;
+                        line-height: 1.6em;
+                        text-align: center;
+                        margin-top: 14px;
+                    }
+                    
+                }
+                
+                    .appointment-row{
+                        display: flex;
+                        flex-wrap: wrap;
+                        .appointment-form{
+                            .row{
+                                display: flex;
+                                flex-wrap: wrap;
+                                margin-right: -15px;
+                                margin-left: -15px;
+                                .col{
+                                    flex-basis: 44%;
+                                    margin: 5px auto;
+                                    .form-field{
+                                        margin-bottom: 23px;
+                                        position: relative;
+                                        label{
+                                            font-size: 15px;
+                                            font-weight: 500;
+                                            color: #666;
+                                            margin-bottom: 3px;
+                                        }
+                                        input{
+                                            height: 42px;
+                                            border: 1px solid #eaeaea;
+                                            border-radius: 7px;
+                                            width: 100%;
+                                            padding: 10px 15px;
+                                            color: #111;
+                                            transition: all 0.3s ease;
+                                        }
+
+                                        .custom-select-wrap{
+                                            
+                                            .cust-select{
+                                                height: 42px;
+                                                width: 100%;
+                                                border: 1px solid #eaeaea;
+                                                border-radius: 7px;
+                                                padding: 10px 15px;
+                                                color: #111;
+                                                transition: all 0.3s ease;
+                                            }
+                                        }
+   
+
+                                    }
+                                    @media screen and(max-width: 991px){
+                                            flex-basis: 85%;
+                                            margin: 0 auto;
+                                        
+                                    }
+                                 
+                                }
+                                .text-col{
+                                    display: flex;
+                                    flex-basis: 94%;
+                                    margin-left: 33px;
+                                    z-index: 1;
+                                    
+                                    .form-field{
+                                        margin-bottom: 15px;
+                                        flex-basis: 100%;
+
+                                        textarea{
+                                            border: 1px solid #eaeaea;
+                                            border-radius: 7px;
+                                            width: 100%;
+                                            padding: 10px 15px;
+                                            color: #111;
+                                            height: 150px;
+                                            transition: all 0.3s ease;
+                                        }
+                                    }
+                                    .btn{
+                                        background-color: #0cb8b6;
+                                        color: #fff;
+                                        padding: 0.6em 1.8em;
+                                        font-weight: 600;
+                                        padding: 0.8em 2.5em;
+                                        border-radius: 7px;
+                                        border: none;
+                                        outline: none;
+                                        cursor: pointer;
+                                        transition: all 0.4s ease;
+                                    }
+
+                                    @media screen and(max-width: 991px){
+                                        flex-basis: 85%;
+                                        margin: 0 auto;
+                                    
+                                }
+                                    
+                                }
+
+                                 
+                            
+                            }
+                           
+                        }
+                    }
+                
+            }
+
+        //Service Section End
+
+            #doctors{
+                .section-title{
+                    margin: 100px auto 20px auto;
+                    
+                    .title{
+                        
+                    }
+                    .seperator{
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: row;
+                        align-items: center;
+                        margin-top: 122px;
+                        margin-bottom: 15px;
+                        width: 130px;
+                        margin: auto;
+                        .seperator-left{
+                            height: 2px;
+                            width: 42px;
+                            background-color: $btnBg;
+                            
+                        }
+
+                        .seperator-center{
+                            margin: 0 15px;
+                            animation: rotateAnimation 6s linear infinite;
+                            img{
+                                border: 0;
+                                max-width: 100%;
+                                height: auto;
+                                
+                            }
+                        }
+
+                        .seperator-right{
+                            height: 2px;
+                            width: 42px;
+                            background-color: $btnBg;
+                        }
+                    }
+                    
+                    .heading-subtitle{
+                        font-size: 16px;
+                        line-height: 1.6em;
+                        text-align: center;
+                        margin-top: 14px;
+                    }
+                    
+                }
+
+                .about-slider{
+                    margin-bottom: 100px;
+                    .slide-two{
+
+                            .member{
+                                
+                                position: relative;
+                                border-radius: 5px;
+                                overflow: hidden;
+                                border: 1px solid #eaeaea;
+                                transition: all 0.3s ease;
+                                background-color: #fff;
+                                .member-img{
+                                    position: relative;
+                                    img{
+                                        width: 100%;
+                                        display: block;
+                                    }
+                                    .doctor-link{
+                                    
+                                    
+                                    }
+                                    .member-social-wrap{
+                                        position: absolute;
+                                        bottom: 0;
+                                        left: 0;
+                                        width: 100%;
+                                        .member-social-bg{
+                                            height: 110px;
+                                            width: 100%;
+                                            opacity: 0;
+                                            transition: all 0.4s ease;
+                                        }
+                                        .member-social{
+                                            display: flex;
+                                            position: absolute;
+                                            font-size: 22px;
+                                            bottom: 30px;
+                                            left: 50%;
+                                            transform: translateX(-50%);
+
+                                            li{
+                                                margin: 0 10px;
+
+                                                a{
+                                                    color: #fff;
+                                                    transform: scale(0);
+                                                    display: block;
+                                                }
+                                                
+                                            }
+                                            .fa-facebook-square{
+                                                    
+                                            }
+                                            .fa-facebook-square:before{
+                                                content: "\f082";
+                                            }
+                                            
+                                        
+                                        }
+                                    }
+                                }
+
+                                .member-meta{
+                                    text-align: center;
+                                    width: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    justify-content: center;
+                                    transition: all 0.4s ease;
+                                    padding-top: 15px;
+                                    padding-bottom: 15px;
+                                    .member-meta-in{
+                                        .member-name{
+                                            font-size: 20px;
+                                            margin-bottom: 4px;
+                                            position: relative;
+                                            opacity: 1;
+                                            visibility: visible;
+                                            transition: all 0.4s ease;
+                                            a{
+                                                text-decoration: none;
+                                                color: inherit;
+                                                transition: all 0.3s ease;
+
+                                                &:hover{
+                                                    color: $btnBg;
+                                                }
+                                            }
+                                            
+                                        }
+                                        .member-designation{
+
+                                        }
+                                    }
+                                }
+                            }
+                    }
+                }
+            }
+
+        //Team Section Start
+
+        //Team Section End
     }
 //Main Section End
