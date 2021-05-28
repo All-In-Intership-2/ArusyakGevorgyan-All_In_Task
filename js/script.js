@@ -19,5 +19,17 @@ var swiper = new Swiper('.swiper-container', {
   });
 
 
- 
-  
+  var acc = document.getElementsByClassName("accordian");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var accordianBody = this.nextElementSibling;
+    if (accordianBody.style.display === "block") {
+        accordianBody.style.display = "none";
+    } else {
+        accordianBody.style.display = "block";
+    }
+  });
+}
