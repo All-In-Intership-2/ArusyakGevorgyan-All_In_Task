@@ -2347,11 +2347,11 @@ header{
                             margin-top: -4px;
                             color: $title;
                         }
-                            .accordian-wrap{
+                            .st-accordian-wrap{
                                 
-                                .accordian{
+                                .st-accordian{
                                     margin-bottom: 15px;
-                                    .accordian-title{
+                                    .st-accordian-title{
                                         border: 1px solid #eaeaea;
                                         padding: 12px 20px;
                                         font-weight: 600;
@@ -2367,7 +2367,7 @@ header{
                                             color: #0cb8b6;
                                             background-color: rgba(12, 184, 182, 0.1);
                                         }
-                                        .accordian-toggle{
+                                        .st-accordian-toggle{
                                             position: absolute;
                                             top: 17px;
                                             right: 20px;
@@ -2378,7 +2378,7 @@ header{
                                             content: "\f107";
                                         }
                                     }
-                                    .accordianBody{
+                                    .st-accordian-body{
                                         border: 1px solid #eaeaea;
                                         padding: 22px 20px;
                                         margin-top: -1px;
@@ -2387,7 +2387,7 @@ header{
                                     }
                                 }
                                 .active{
-                                    .accordian-title{
+                                    .st-accordian-title{
                                         color: #fff;
                                         background-color: #0cb8b6;
                                         border-color: #0cb8b6;

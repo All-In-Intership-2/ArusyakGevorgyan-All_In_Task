@@ -2256,10 +2256,10 @@ main .faq-wrap .row .right .accordian-heading {
   margin-top: -4px;
   color: #111;
 }
-main .faq-wrap .row .right .accordian-wrap .accordian {
+main .faq-wrap .row .right .st-accordian-wrap .st-accordian {
   margin-bottom: 15px;
 }
-main .faq-wrap .row .right .accordian-wrap .accordian .accordian-title {
+main .faq-wrap .row .right .st-accordian-wrap .st-accordian .st-accordian-title {
   border: 1px solid #eaeaea;
   padding: 12px 20px;
   font-weight: 600;
@@ -2272,28 +2272,28 @@ main .faq-wrap .row .right .accordian-wrap .accordian .accordian-title {
   transition: all 0.3s ease;
   color: #111;
 }
-main .faq-wrap .row .right .accordian-wrap .accordian .accordian-title:hover {
+main .faq-wrap .row .right .st-accordian-wrap .st-accordian .st-accordian-title:hover {
   color: #0cb8b6;
   background-color: rgba(12, 184, 182, 0.1);
 }
-main .faq-wrap .row .right .accordian-wrap .accordian .accordian-title .accordian-toggle {
+main .faq-wrap .row .right .st-accordian-wrap .st-accordian .st-accordian-title .st-accordian-toggle {
   position: absolute;
   top: 17px;
   right: 20px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-main .faq-wrap .row .right .accordian-wrap .accordian .accordian-title .fa-angle-down::before {
+main .faq-wrap .row .right .st-accordian-wrap .st-accordian .st-accordian-title .fa-angle-down::before {
   content: "";
 }
-main .faq-wrap .row .right .accordian-wrap .accordian .accordianBody {
+main .faq-wrap .row .right .st-accordian-wrap .st-accordian .st-accordian-body {
   border: 1px solid #eaeaea;
   padding: 22px 20px;
   margin-top: -1px;
   background-color: #fff;
   border-radius: 0 0 7px 7px;
 }
-main .faq-wrap .row .right .accordian-wrap .active .accordian-title {
+main .faq-wrap .row .right .st-accordian-wrap .active .st-accordian-title {
   color: #fff;
   background-color: #0cb8b6;
   border-color: #0cb8b6;
